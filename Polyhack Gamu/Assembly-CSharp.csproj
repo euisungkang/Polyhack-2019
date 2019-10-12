@@ -79,7 +79,7 @@
     <Compile Include="Assets\Easy Weapons\Scripts\TimedObjectDestroyer.cs" />
     <Compile Include="Assets\Easy Weapons\Scripts\Weapon.cs" />
     <Compile Include="Assets\Easy Weapons\Scripts\WeaponSystem.cs" />
-    <Compile Include="Assets\Scripts\BulletBehavior.cs" />
+    <Compile Include="Assets\Scripts\BreakableRock.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <None Include="Assets\Easy Weapons\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">

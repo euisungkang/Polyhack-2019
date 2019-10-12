@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        //playerRigidBody.velocity = movement * moveSpeed;
+        playerRigidBody.velocity = movement * moveSpeed;
         playerRigidBody.MovePosition(playerRigidBody.position + movement * moveSpeed * Time.fixedDeltaTime);
 
         //aim direction
@@ -41,10 +41,8 @@ public class PlayerController : MonoBehaviour
             transform.LookAt(straightPoint);
         }
 
-        if(Input.GetKeyDown("space"))
-        {
-            GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity) as GameObject;
-            bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 10);
-        }
+        //transform.position = new Vector2(transform.position.x + (moveHorizontal * moveSpeed),
+        //   transform.position.y + (moveVertical * moveSpeed));
+
     }
 }
